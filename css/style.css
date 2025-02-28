@@ -1,94 +1,40 @@
 body {
-    font-family: 'Gothic A1', sans-serif;
-    background: linear-gradient(to bottom, #ff6f00, #ffcc80);
-    color: #ffffff;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
-    padding: 0;
-}
-
-header {
-    background: linear-gradient(to right, #ff9800, #ffa726);
-    padding: 20px 0;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    padding: 20px;
     display: flex;
     justify-content: center;
 }
 
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    transition: color 0.3s ease;
-}
-
-.hover-effect:hover {
-    color: #ffeb3b;
-}
-
-.hero {
-    text-align: center;
-    padding: 100px 20px;
-    background: linear-gradient(to right, #ff9800, #ffa726);
-}
-
-.hero h1 {
-    color: #ffeb3b;
-    font-size: 3em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.hero p {
-    font-size: 1.5em;
-    color: #ffffff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.info-blocks {
+.container {
+    width: 80%;
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    gap: 20px;
+}
+
+.column {
+    background-color: #333;
+    color: #ff6600;
     padding: 20px;
+    border-radius: 5px;
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
 }
 
-.block {
-    background: linear-gradient(to bottom, #ffcc80, #ff9800);
-    border: 1px solid #ffeb3b;
-    padding: 20px;
-    width: 30%;
-    margin: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    text-align: center;
+.column h2 {
+    margin-top: 0;
 }
 
-.block h2 {
-    color: #ffeb3b;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+@media (max-width: 768px) {
+    .column {
+        flex: 1 1 calc(50% - 20px);
+    }
 }
 
-.block p {
-    color: #ffffff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.block:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
-}
-
-footer {
-    background: linear-gradient(to right, #ff9800, #ffa726);
-    text-align: center;
-    padding: 10px 0;
-    color: #ffffff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+@media (max-width: 480px) {
+    .column {
+        flex: 1 1 100%;
+    }
 }
