@@ -21,6 +21,12 @@ body {
     border-radius: 5px;
     flex: 1 1 calc(33.333% - 20px);
     box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.column:hover {
+    border-color: #ff6600;
 }
 
 .column h2 {
