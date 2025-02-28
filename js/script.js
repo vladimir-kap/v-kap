@@ -1,5 +1,3 @@
-# !script.js
-
 document.addEventListener('DOMContentLoaded', function() {
     const hoverElements = document.querySelectorAll('.hover-effect');
 
