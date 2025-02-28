@@ -1,10 +1,104 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1e1e1e;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e0e0e0;
+    transition: color 0.3s ease;
+}
+
+.hover-effect:hover {
+    color: #ff9800;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #1e1e1e;
+}
+
+.hero h1 {
+    color: #ff9800;
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.5em;
+    color: #4caf50;
+}
+
+.info-blocks {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     padding: 20px;
 }
 
-h1 {
-    color: #007bff;
+.block {
+    background-color: #1e1e1e;
+    border: 1px solid #ff9800;
+    padding: 20px;
+    width: 30%;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.block:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.about {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #1e1e1e;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.member {
+    background-color: #1e1e1e;
+    border: 1px solid #ff9800;
+    padding: 20px;
+    width: 30%;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 10px 0;
 }
