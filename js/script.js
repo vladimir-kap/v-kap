@@ -1,13 +1,19 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const columns = document.querySelectorAll('.column');
+document.addEventListener('DOMContentLoaded', function() {
+    const boxes = document.querySelectorAll('.box');
 
-    columns.forEach(column => {
-        column.addEventListener('mouseover', () => {
-            column.style.borderColor = '#ff6600';
-        });
+    function checkVisibility() {
+        boxes.forEach((box, index) => {
+            const boxTop = box.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
 
-        column.addEventListener('mouseout', () => {
-            column.style.borderColor = 'transparent';
+            if (boxTop < windowHeight - 100) {
+                setTimeout(() => {
+                    box.classList.add('animate');
+                }, index * 100); // Добавляем задержку для эффекта последовательности
+            }
         });
-    });
+    }
+
+    window.addEventListener('scroll', checkVisibility);
+    window.addEventListener('load', checkVisibility); // Проверяем видимость при загрузке страницы
 });

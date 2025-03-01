@@ -3,37 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Резюме</title>
+    <title>Мое Резюме</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="column">
-            <h2>Личная информация</h2>
-            <p><strong>Имя:</strong> Иван Иванов</p>
-            <p><strong>Телефон:</strong> +7 (999) 123-45-67</p>
-            <p><strong>Email:</strong> ivan@example.com</p>
-            <p><strong>Адрес:</strong> г. Москва, ул. Пушкина, д. 10</p>
+    <header>
+        <h1>Мое Резюме</h1>
+    </header>
+    <main class="container">
+        <div class="box">
+            <h2>Обо Мне</h2>
+            <p>Привет! Меня зовут Иван. Я опытный разработчик с навыками в области фронтенд-разработки.</p>
         </div>
-        <div class="column">
-            <h2>Образование</h2>
-            <p><strong>Университет:</strong> Московский государственный университет</p>
-            <p><strong>Факультет:</strong> Факультет компьютерных наук</p>
-            <p><strong>Год окончания:</strong> 2015</p>
-        </div>
-        <div class="column">
-            <h2>Опыт работы</h2>
-            <p><strong>Компания:</strong> ООО "Пример"</p>
-            <p><strong>Должность:</strong> Специалист по разработке</p>
-            <p><strong>Период:</strong> 2015 - по настоящее время</p>
-            <p><strong>Обязанности:</strong></p>
+        <div class="box">
+            <h2>Навыки</h2>
             <ul>
-                <li>Разработка и поддержка программного обеспечения</li>
-                <li>Участие в совместной проверке кода</li>
-                <li>Создание технической документации</li>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+                <li>React.js</li>
+                <li>Node.js</li>
             </ul>
         </div>
-    </div>
-    <script src="script.js"></script>
+        <div class="box">
+            <h2>Опыт Работы</h2>
+            <p>Работал в компании "Example Corp" на позиции Junior Frontend Developer с 2019 по 2021 год.</p>
+        </div>
+        <div class="box">
+            <h2>Образование</h2>
+            <p>Выпускник Московского государственного университета имени М.В. Ломоносова, факультет информационных технологий.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Иван Иванов. Все права защищены.</p>
+    </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
