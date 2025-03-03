@@ -16,6 +16,29 @@
             margin: 0;
             padding: 0;
         }
+        #banner {
+            display: flex;
+            align-items: center; /* Выравнивание по вертикали по центру */
+            justify-content: space-between; /* Распределение пространства между элементами */
+            background-image: url('images/background.jpg'); /* Замените на ваш фоновый изображение */
+            background-size: cover; /* Подстройка размера фона */
+            background-position: center; /* Центрирование фона */
+            padding: 20px; /* Добавление отступов внутри блока */
+        }
+        
+        .inner {
+            flex: 1; /* Дает внутреннему блоку возможность растягиваться */
+            margin-right: 20px; /* Отступ между текстом и изображением */
+        }
+        
+        .image img {
+            max-height: 100%; /* Изображение будет подстраиваться по высоте родительского блока */
+        }
+        .cat-image {
+            max-width: 200px; /* Максимальная ширина изображения */
+            margin-left: 20px; /* Отступ слева от текста */
+            text-align: right;
+        }
     </style>
 </head>
 <body class="is-preload">
@@ -33,23 +56,21 @@
     </header>
 
 
-    <!-- Banner -->
-    <!-- Note: The "styleN" class below should match that of the header element. -->
-    <section id="banner" class="style2">
-        <div class="inner">
-            <span class="image">
-                <img src="images/pic07.jpg" alt="" />
-            </span>
-            <header class="major">
-                <h1>Обо мне</h1>
-            </header>
-            <div id="ZeroPadMarg">
-				<p>Меня зовут V-KAP, я работал в тех.поддержке и на позиции QA начиная с junior уровня.</p>
-				<p>test br</p>
-				<p>test br</p>
-			</div>
+<!-- Banner -->
+<!-- Note: The "styleN" class below should match that of the header element. -->
+<section id="banner" class="style2" style="margin: 0; padding: 0; display: flex; align-items: center;">
+    <div class="inner">
+        <header class="major">
+            <h1>Обо мне</h1>
+        </header>
+        <div id="ZeroPadMarg">  <img src="images/43302323.png" alt="Кот" class="cat-image" float=right;>
+            <p>Меня зовут V-KAP, я работал в тех.поддержке и на позиции QA начиная с junior уровня.</p>
+            <p>test br</p>  
+            <p>test br</p>
         </div>
-    </section>
+
+    </div>
+</section>
 
     <!-- Main -->
     <div id="main">
